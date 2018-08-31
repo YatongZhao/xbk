@@ -4,7 +4,7 @@ import NewsItemStyle from './NewsItem.css'
 import Cookies from 'js-cookie'
 import axios from '../../api/axios.js'
 import url from '../../api/url.js'
-import { Avatar } from '../common/Common.js'
+import { Avatar, LazyImg, refreshImg } from '../common/Common.js'
 import { connect } from 'react-redux'
 import actions from '../../actions'
 
@@ -38,10 +38,11 @@ class NewsItem extends Component {
           <div className={NewsItemStyle.title}>{title}</div>
           <div className={NewsItemStyle.span}>{source} {timeStr}</div>
         </div>
-        <div
+        {/* <div
           className={NewsItemStyle.right}
           style={{backgroundImage: `url(${img})`}}>
-        </div>
+        </div> */}
+        <LazyImg className={NewsItemStyle.right} src={img}></LazyImg>
       </a>
     )
   }
@@ -55,6 +56,7 @@ class Home extends Component {
     }
 
     this.componentWillMount = this.componentWillMount.bind(this)
+    this.componentDidMount = this.componentDidMount.bind(this)
     this.handleMoreStar = this.handleMoreStar.bind(this)
     this.handleActiveStar = this.handleActiveStar.bind(this)
     this.fetchNewsList = this.fetchNewsList.bind(this)
@@ -98,6 +100,10 @@ class Home extends Component {
   async componentWillMount () {
     let { star_id } = await initActiveStar()
     this.fetchNewsList(star_id)
+  }
+
+  componentDidMount () {
+    // refreshImg()
   }
 
   render() {

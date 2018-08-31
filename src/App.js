@@ -9,16 +9,24 @@ import TieDetail from './Components/Star/Community/TieDetail'
 import Create from './Components/Star/Community/Create'
 import { intercept } from './api/login'
 import ImagePreview from './Components/common/ImagePreview'
-import { Toast } from './Components/common/Common'
+import { Toast, refreshImg } from './Components/common/Common'
+import throttle from 'lodash/throttle'
 
 class App extends Component {
   constructor(props) {
     super(props)
 
     this.componentWillMount = this.componentWillMount.bind(this)
+    this.componentDidMount = this.componentDidMount.bind(this)
   }
   componentWillMount () {
     intercept.call(this)
+  }
+  componentDidMount () {
+    window.addEventListener('scroll', throttle((e) => {
+      let top = document.body.scrollTop || document.documentElement.scrollTop
+      refreshImg(top, window.outerHeight, 1000)
+    }, 200))
   }
   render() {
     return (
