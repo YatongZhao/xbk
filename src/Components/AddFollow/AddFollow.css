@@ -1,0 +1,54 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: .28rem;
+  height: .86rem;
+  border-bottom: 1px solid #ccc;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background-color: #fff;
+}
+.back {
+  width: 1.46rem;
+  text-align: center;
+  height: .86rem;
+  background-size: .42rem;
+  background-repeat: no-repeat;
+  background-position: .3rem center;
+}
+.confirm {
+  width: 1.46rem;
+  text-align: center;
+}
+.container {
+  margin-top: .86rem;
+}
+
+.follow-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 .4rem;
+  height: 1.6rem;
+  font-size: .24rem;
+  border-bottom: 1px solid #ccc;
+}
+.info {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.star-name {
+  padding-left: .24rem;
+}
+.btn {
+  width: 1.2rem;
+  height: .6rem;
+  border-radius: .3rem;
+  border: 1px solid #575757;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

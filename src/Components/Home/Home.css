@@ -1,0 +1,33 @@
+.home {
+  width: 100%;
+}
+.home-star-container {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  padding: 0 .2rem;
+  border-bottom: 1px solid rgba(0, 0, 0, .1);
+}
+.star {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 1.8rem;
+  margin: 0 .2rem;
+  flex-shrink: 0;
+}
+.star-name {
+  font-size: 0.28rem;
+  width: 100%;
+  overflow: hidden;
+}
+
+.home-news-container {
+  padding: 1.8rem .27rem 1rem;
+}

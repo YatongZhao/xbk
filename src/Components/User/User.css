@@ -1,0 +1,43 @@
+.user {
+
+}
+.info {
+  padding: .7rem .4rem .48rem .8rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+}
+.avatar {
+  flex-shrink: 0;
+}
+.name {
+  padding-left: .68rem;
+  font-size: .42rem;
+  display: flex;
+  /* flex-direction: column; */
+  text-align: left;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+}
+.stars {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 .2rem;
+  border-bottom: 1px solid #ccc;
+  padding-left: .5rem;
+  padding-right: .2rem;
+  height: 1.6rem;
+  font-size: .32rem;
+  color: #000;
+}
+.login-btn {
+  margin-top: .2rem;
+  font-size: .28rem;
+  color: #666;
+  height: 1.6rem;
+  line-height: 1.6rem;
+  padding-left: 1rem;
+}

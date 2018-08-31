@@ -1,0 +1,70 @@
+.login {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  background-color: #f2f2f2;
+  font-size: .28rem;
+}
+.back {
+  width: 1.46rem;
+  top: 0;
+  position: fixed;
+  text-align: center;
+  height: .86rem;
+  background-size: .42rem;
+  background-repeat: no-repeat;
+  background-position: .3rem center;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.avatar {
+  border: 1px solid #ccc;
+  margin-bottom: .52rem;
+  margin-top: 1.8rem;
+  flex-shrink: .3;
+}
+.ipt-box {
+  width: 100%;
+  height: 1.02rem;
+  background-color: #fff;
+  margin: .01rem 0;
+  display: flex;
+  flex-shrink: 0;
+}
+.ipt-span {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  padding-left: .3rem;
+  flex-shrink: 0;
+}
+.ipt {
+  width: 100%;
+  font-size: .28rem;
+  flex-shrink: 0;
+}
+.tips {
+  height: .8rem;
+  line-height: .8rem;
+  color: rgba(255, 0, 0, .7);
+  flex-shrink: 0;
+}
+.submit {
+  margin-top: .14rem;
+  width: 7rem;
+  height: 1.06rem;
+  color: #fff;
+  background-color: #46a0df;
+  font-size: .28rem;
+  flex-shrink: 0;
+}
+.register {
+  padding: .4rem;
+  flex-shrink: 0;
+}

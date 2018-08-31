@@ -1,0 +1,44 @@
+.sorption-nav {
+  position: fixed;
+  z-index: 10;
+  /* top: -1px; */
+}
+.nav {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  background-color: #fff;
+  height: 1rem;
+  box-shadow: 0 1px rgba(0, 0, 0, .05);
+  z-index: 10;
+}
+.star {
+  /* padding-top: 4rem; */
+}
+.desc {
+  /* margin-bottom: .24rem; */
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+.banner {
+  width: 100%;
+  display: block;
+}
+.content {
+  margin-top: .24rem;
+}
+.active {
+  color: #000;
+}
+.active::after {
+  content: '';
+  width: .3rem;
+  height: .06rem;
+  position: absolute;
+  background-color: #000;
+  left: 50%;
+  transform: translate3d(-50%, 0, 0);
+  bottom: 0rem;
+  border-radius: .03rem;
+}

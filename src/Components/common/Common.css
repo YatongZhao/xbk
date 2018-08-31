@@ -1,0 +1,31 @@
+.back-drop {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, .8);
+}
+
+.avatar {
+  border-radius: 50%;
+  background-position: center;
+  background-size: cover;
+}
+
+.toast {
+  position: fixed;
+  z-index: 10000;
+  top: 50%;
+  left: 50%;
+  transform: translate3d(-50%, -50%, 0);
+  padding: .2rem;
+  font-size: .22rem;
+  background-color: #fff;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  background-color: rgba(0, 0, 0, .5);
+  color: #fff;
+  border-radius: .1rem;
+  transition: all .5s;
+}

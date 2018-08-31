@@ -1,0 +1,71 @@
+.news {
+  padding: 0 .36rem 0 .54rem;
+}
+.news-title {
+  font-size: .3rem;
+}
+.news-span,
+.news-content {
+  font-size: .24rem;
+  margin-top: .1rem;
+}
+.news-pic-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin-top: .24rem;
+}
+.news-pic {
+  width: 1.94rem;
+  height: 1.94rem;
+  background-position: center;
+  background-size: cover;
+  flex-shrink: 0;
+  margin-bottom: .1rem;
+}
+.card-container {
+  position: relative;
+  background-color: #f7f7f7;
+  border-radius: .2rem;
+  margin-bottom: .27rem;
+  padding: .27rem;
+  text-align: left;
+}
+.card-container::before {
+  content: '';
+  position: absolute;
+  width: .16rem;
+  height: .16rem;
+  border-radius: 50%;
+  background-color: #F19EC2;
+  left: -0.3rem;
+  top: 50%;
+  transform: translate3d(0, -50%, 0);
+}
+.schedule,
+.destination {
+  font-size: .3rem;
+}
+.schedule {
+  color: #F29C9F;
+}
+.destination {
+  margin-top: .2rem;
+}
+
+.card::after,
+.schedule-container::after {
+  content: '';
+  width: .01rem;
+  height: 110%;
+  background: #eee;
+  position: absolute;
+  left: -0.22rem;
+  z-index: -1;
+}
+.card::after {
+  top: 0;
+}
+.schedule-container::after {
+  top: 50%;
+}

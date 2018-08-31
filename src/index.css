@@ -1,0 +1,84 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+button, article, aside, canvas, details, embed, figure,
+figcaption, footer, header, hgroup, menu, nav,
+output, ruby, section, summary, time, mark,
+audio, video,
+input, select, option, textarea {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+  background: transparent;
+  outline: none;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+ol, ul, li {
+  list-style-type: none;
+}
+
+button {
+  background: transparent;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none;
+}
+
+strong {
+  font-weight: bold;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+img {
+  border: 0;
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+input, textarea {
+  -webkit-appearance: none; /*去除input默认样式*/
+}
+
+/*下面两行代码特意提出来，是为了解决html字体过大时，他的line-height对子孙元素的不良影响。必不可少，开发时你可以把他放到样式重置中。*/
+html {
+  line-height: initial;
+  height: 100%;
+  font-size: 100px;
+}
+
+body {
+  font-size: .5rem;
+  background-color: #fff;
+}
+
+input {
+  -webkit-appearance: none;
+}
